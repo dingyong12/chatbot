@@ -2,3 +2,7 @@ server:
   port: 8090
   servlet:
     context-path: /chatbot
+
+
+dingding:
+  sendUrl: https://api.dingtalk.com/v1.0/robot/oToMessages/batchSend

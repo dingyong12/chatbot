@@ -2,6 +2,8 @@ package cn.dy.chatapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ComponentScans;
 
 /**
  * @program: chat-gpt
@@ -10,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @create: 2023-05-23 23:49
  **/
 @SpringBootApplication
+@ComponentScan("cn.dy")
 public class ApiApplication {
 
     public static void main(String[] args) {
