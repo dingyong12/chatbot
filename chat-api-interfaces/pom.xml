@@ -86,7 +86,7 @@
 
 
     <build>
-        <finalName>chat-gpt-ai</finalName>
+        <finalName>chat-gpt-api</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
