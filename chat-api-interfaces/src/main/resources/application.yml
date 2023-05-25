@@ -5,4 +5,7 @@ server:
 
 
 dingding:
+  appKey: ding2bspjaawdawhjgl3
+  appSecret: Lj-5yi07DQ82OdJtuvqYDgIXOax1Ulm79LidjhFze-bl-kxUW_mByefZakH0D7ll
   sendUrl: https://api.dingtalk.com/v1.0/robot/oToMessages/batchSend
+  tokenUrl: https://api.dingtalk.com/v1.0/oauth2/accessToken

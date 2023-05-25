@@ -13,6 +13,9 @@ public class BotAskRequest implements Serializable {
 
     private String conversationId;
 
+
+    private String senderStaffId;
+
     /**
      * 被@人的信息
      */
@@ -38,8 +41,9 @@ public class BotAskRequest implements Serializable {
     public BotAskRequest() {
     }
 
-    public BotAskRequest(String conversationId, List<DingUserInfo> atUsers, String senderNick, String senderCorpId, String msgtype, DingText text) {
+    public BotAskRequest(String conversationId, String senderStaffId, List<DingUserInfo> atUsers, String senderNick, String senderCorpId, String msgtype, DingText text) {
         this.conversationId = conversationId;
+        this.senderStaffId = senderStaffId;
         this.atUsers = atUsers;
         this.senderNick = senderNick;
         this.senderCorpId = senderCorpId;
@@ -53,6 +57,14 @@ public class BotAskRequest implements Serializable {
 
     public void setConversationId(String conversationId) {
         this.conversationId = conversationId;
+    }
+
+    public String getSenderStaffId() {
+        return senderStaffId;
+    }
+
+    public void setSenderStaffId(String senderStaffId) {
+        this.senderStaffId = senderStaffId;
     }
 
     public List<DingUserInfo> getAtUsers() {
